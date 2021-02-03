@@ -7,22 +7,16 @@ import {MatToolbarModule, MatButtonModule, MatIconModule} from '@angular/materia
 import { NgbCarousel, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NavbarComponent } from './navbar/navbar.component';
-import { DummyComponent } from './dummy/dummy.component';
-import { CarouselComponent } from './carousel/carousel.component';
-import { FormComponent } from './form/form.component';
-
-
-
-
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { InicioComponent } from './components/inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    DummyComponent,
     CarouselComponent,
-    FormComponent 
+    InicioComponent,
   ],
   imports: [
     BrowserModule,

@@ -15,4 +15,5 @@ export class CarouselComponent implements OnInit {
   myimage:string="assets/img/hanon.jpg"
   myimage1:string="assets/img/hanon1.jpg"
   myimage2:string="assets/img/hanon2.jpg"
+  
 }
