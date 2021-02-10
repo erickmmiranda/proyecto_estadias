@@ -26,6 +26,7 @@ export class ServicesService {
   }
 
   createUser(user: User): Observable<ApiResponse> {
+    console.log("Funciona hasta aqui");
     return this.http.post<ApiResponse>(this.baseUrl + '/insert.php', user);
   }
 
@@ -33,7 +34,7 @@ export class ServicesService {
     return this.http.get<ApiResponse>(this.baseUrl + '/delete.php?id=' + id);
   }
 
-  updateStudent(user: User){
+  updateUsers(user: User){
     return this.http.post<ApiResponse>(this.baseUrl + '/update.php', user);
   }
 

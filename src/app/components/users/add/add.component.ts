@@ -25,12 +25,12 @@ export class AddComponent implements OnInit {
    }
    this.addForm = this.formBuilder.group({
       id: [],
-      username: ['', Validators.required],
+      nombre: ['', Validators.required],
+      apellidos: ['', Validators.required],
       password: ['', Validators.required],
-      firstName: ['', Validators.required],
-      lastName: ['', Validators.required],
-      age: ['', Validators.required],
-      salary: ['', Validators.required]
+      correo: ['', Validators.required],
+      num_nomina: ['', Validators.required],
+      tipo: ['', Validators.required]
     });
 
   }

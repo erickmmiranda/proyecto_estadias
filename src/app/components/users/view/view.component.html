@@ -7,20 +7,21 @@
         <tr class="bg-dark text-white">
             <td> ID</td>
             <td> Nombre </td>
-            <td> Apellido paterno </td>
-            <td> Apellido materno </td>
-            <td> Edad </td>
-            <td> Salario </td>
+            <td> Apellidos </td>
+            <td> Correo </td>
+            <td> Num. Nomina </td>
+            <td> Tipo </td>
             <td> Accion </td>
+
         </tr>
 
         <tr *ngFor="let user of this.users">
             <td>{{user.id}}</td>
-            <td>{{user.username}}</td>
-            <td>{{user.firstName}}</td>
-            <td>{{user.lastName}}</td>
-            <td>{{user.age}}</td>
-            <td>{{user.salary}}</td>
+            <td>{{user.nombre}}</td>
+            <td>{{user.apellidos}}</td>
+            <td>{{user.correo}}</td>
+            <td>{{user.num_nomina}}</td>
+            <td>{{user.tipo}}</td>
             <td><a href="javascript:void(0);" class="btn btn-success" (click)="edit(user)">Edit</a> /
                 <a href="javascript:void(0);" class="btn btn-danger" (click)="deleteUser(user)">Delete</a></td>
         </tr>

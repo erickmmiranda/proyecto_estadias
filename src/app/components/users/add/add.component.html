@@ -4,38 +4,38 @@
     <div *ngIf="token"><button (click)="logOut()">Logout</button></div>
     <h2 class="text-center">Agregar usuario</h2>
 
-    <form [formGroup]="addForm" (ngSubmit)="onSubmit()">
+    <form [formGroup]="addForm">
         <div class="form-group">
-            <label for="username">User Name:</label>
-            <input type="text" formControlName="username" placeholder="username" name="username" class="form-control" id="username">
+            <label for="nombre">Nombre:</label>
+            <input type="text" formControlName="nombre" placeholder="Nombre" name="nombre" class="form-control" id="nombre">
+        </div>
+
+        <div class="form-group">
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" formControlName="apellidos" placeholder="Apellidos" name="apellidos" class="form-control" id="apellidos">
         </div>
 
         <div class="form-group">
             <label for="password">Password:</label>
-            <input type="password" formControlName="password" placeholder="password" name="password" class="form-control" id="password">
+            <input type="text" formControlName="password" placeholder="Password" name="password" class="form-control" id="password">
         </div>
 
         <div class="form-group">
-            <label for="firstName">First Name:</label>
-            <input formControlName="firstName" placeholder="First Name" name="firstName" class="form-control" id="firstName">
+            <label for="correo">Correo:</label>
+            <input formControlName="correo" placeholder="Correo" name="correo" class="form-control" id="correo">
         </div>
 
         <div class="form-group">
-            <label for="lastName">Last Name:</label>
-            <input formControlName="lastName" placeholder="Last name" name="lastName" class="form-control" id="lastName">
+            <label for="num_nomina">Num. Nomina:</label>
+            <input type="number" formControlName="num_nomina" placeholder="Num.nomina" name="num_nomina" class="form-control" id="num_nomina">
         </div>
 
         <div class="form-group">
-            <label for="age">Age:</label>
-            <input type="number" formControlName="age" placeholder="age" name="age" class="form-control" id="age">
+            <label for="tipo">Tipo:</label>
+            <input type="text" formControlName="tipo" placeholder="Tipo" name="tipo" class="form-control" id="tipo">
         </div>
 
-        <div class="form-group">
-            <label for="salary">Salary:</label>
-            <input type="number" formControlName="salary" placeholder="salary" name="salary" class="form-control" id="salary">
-        </div>
-
-        <button type="button" class="btn btn-success btn-block">Agregar</button>
+        <button type="button" class="btn btn-success btn-block" (click)="onSubmit()">Agregar</button>
     </form>
 
 </div>

@@ -27,12 +27,12 @@ ngOnInit() {
 
   this.addForm = this.formBuilder.group({
     id: [],
-    username: ['', Validators.required],
+    nombre: ['', Validators.required],
+    apellidos: ['', Validators.required],
     password: ['', Validators.required],
-    firstName: ['', Validators.required],
-    lastName: ['', Validators.required],
-    age: ['', Validators.required],
-    salary: ['', Validators.required]
+    correo: ['', Validators.required],
+    num_nomina: ['', Validators.required],
+    tipo: ['', Validators.required]
   });
 
 
@@ -46,7 +46,7 @@ ngOnInit() {
 onUpdate(){
   // console.log(this.addForm.value)
    // console.log(this.addForm.value);
-   this.apiService.updateStudent(this.addForm.value).subscribe(() => {
+   this.apiService.updateUsers(this.addForm.value).subscribe(() => {
     this.router.navigate(['view']);
   },
     error => {

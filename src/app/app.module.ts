@@ -17,6 +17,8 @@ import { ViewComponent } from './components/users/view/view.component';
 import {TokenInterceptor} from './Model/intercepters';
 import { HomeComponent } from './components/home/home.component';
 import { MenuUsuariosComponent } from './components/menu-usuarios/menu-usuarios.component';
+import { LoginComponent } from './login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -28,6 +30,7 @@ import { MenuUsuariosComponent } from './components/menu-usuarios/menu-usuarios.
     ViewComponent,
     HomeComponent,
     MenuUsuariosComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
